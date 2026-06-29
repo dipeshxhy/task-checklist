@@ -22,7 +22,7 @@ const Footer = () => {
         <aside class="grid-flow-col items-center">
           <a className="btn btn-ghost md:text-xl font-extrabold">
             <FaTasks className="mr-2 text-amber-300" />
-            TasksChecker
+            TasksManager
           </a>
           <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
         </aside>
