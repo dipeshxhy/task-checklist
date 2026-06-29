@@ -81,16 +81,16 @@ const App = () => {
     setTasks((prevTasks) => prevTasks.filter((task) => task.id !== id));
   };
   return (
-    <div className="min-h-screen bg-slate-800 text-white">
+    <div className="min-h-screen bg-slate-800 relative text-white">
       <Navbar setSearchQuery={setSearchQuery} />
-      <div className=" p-8 max-w-2xl rounded-md mt-20 shadow-md xl container mx-auto bg-neutral-600">
+      <div className=" md:p-8 p-4 md:max-w-2xl rounded-md mt-10 md:mt-20 shadow-md xl container mx-auto bg-neutral-600">
         <Form
           onAddTask={handleAddTask}
           onEdit={handleEdit}
           isEditing={isEditing}
           updatedTask={updatedTask}
         />
-        <div className="mt-10 overflow-y-auto max-h-[400px]">
+        <div className="mt-10 overflow-y-auto md:max-h-[400px] h-[40vh]">
           <Tasks
             tasks={filteredTasks}
             onDelete={deleteTask}
@@ -100,7 +100,7 @@ const App = () => {
           />
         </div>
       </div>
-      <div className="mt-auto absolute bottom-0 w-full ">
+      <div className=" absolute bottom-0 w-full ">
         <Footer />
       </div>
     </div>

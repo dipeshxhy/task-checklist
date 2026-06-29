@@ -19,8 +19,8 @@ const Form = ({ onAddTask, updatedTask, onEdit, isEditing }) => {
     setValue('');
   };
   return (
-    <div className="">
-      <form onSubmit={handleSubmit} className="flex gap-10 items-center">
+    <div className="w-full">
+      <form onSubmit={handleSubmit} className="flex gap-10 items-center ">
         <div className="flex-1">
           <Input value={value} onChange={(e) => setValue(e.target.value)} />
         </div>

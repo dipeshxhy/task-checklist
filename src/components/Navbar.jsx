@@ -4,7 +4,7 @@ const Navbar = ({ setSearchQuery }) => {
     <div>
       <div className="navbar bg-base-300 shadow-md">
         <div className="flex-1">
-          <a className="btn btn-ghost text-xl font-extrabold">
+          <a className="btn btn-ghost sm:text-xl text-sm font-extrabold">
             <FaTasks className="mr-2 text-amber-300" />
             TasksChecker
           </a>

@@ -11,12 +11,12 @@ const Task = ({ completed, id, todo, onDelete, setIsEditing, onEditInput, onChec
     });
   };
   return (
-    <div className="  rounded-md p-3">
+    <div className="  rounded-md md:p-3">
       <ul className="shadow-xl ">
         <li className="list  w-full hover:bg-slate-700 hover:shadow-md hover:rounded-md hover:transition-all hover:ease-in-out hover:duration-300">
           <div className=" list-row flex items-center justify-between  w-full ">
             <div
-              className={`text-xl ${completed ? 'line-through decoration-red-600 text-neutral-400' : ''} `}
+              className={`sm:text-xl text-sm ${completed ? 'line-through decoration-red-600 text-neutral-400' : ''} `}
             >
               {todo}
             </div>
